@@ -6,13 +6,11 @@ namespace butusovlab1base
 {
 	public partial class FormTrain : Form
 	{
-		private Train train;
-
+		private ITransport train;
 		public FormTrain()
 		{
 			InitializeComponent();
 		}
-
 		private void Draw()
 		{
 			Bitmap bmp = new Bitmap(pictureBoxtrain.Width, pictureBoxtrain.Height);
@@ -20,16 +18,20 @@ namespace butusovlab1base
 			train.DrawTrain(gr);
 			pictureBoxtrain.Image = bmp;
 		}
-
 		private void buttonCreate_Click(object sender ,EventArgs e)
 		{
 			Random rnd = new Random();
-			train = new Train();
-			train.Init(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue, Color.Yellow, true, true);
-			train.SetPos(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxtrain.Width, pictureBoxtrain.Height);
+			train = new Train(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Green, Color.Yellow, true, true);
+			train.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxtrain.Width, pictureBoxtrain.Height);
 			Draw();
 		}
-
+		private void buttonCreateBase_Click(object sender,EventArgs e)
+		{
+			Random rnd = new Random();
+			train = new BaseTrain(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Green);
+			train.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxtrain.Width, pictureBoxtrain.Height);
+			Draw();
+		}
 		private void buttonMove_Click(object sender, EventArgs e)
 		{
 			//получаем имя кнопки
