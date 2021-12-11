@@ -16,7 +16,7 @@ namespace butusovlab1base
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FormTrain());
+			Application.Run(new FormParking());
 		}
 	}
 }

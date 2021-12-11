@@ -14,9 +14,6 @@ namespace butusovlab1base
 			Flashlight = flashLight;
 			Horns = horns;
 		}
-
-
-
 		public override void DrawTrain(Graphics g)
 		{
 
@@ -25,23 +22,20 @@ namespace butusovlab1base
 
 			if (Horns)
 			{
-				g.DrawLine(pen, _startPosX + 15, _startPosY + 50, _startPosX, _startPosY);
-				g.DrawLine(pen, _startPosX + 15, _startPosY + 50, _startPosX + 30, _startPosY);
-				g.DrawLine(pen, _startPosX + 60, _startPosY + 50, _startPosX + 45, _startPosY);
-				g.DrawLine(pen, _startPosX + 60, _startPosY + 50, _startPosX + 75, _startPosY);
-				g.DrawLine(pen, _startPosX + 105, _startPosY + 50, _startPosX + 90, _startPosY);
-				g.DrawLine(pen, _startPosX + 105, _startPosY + 50, _startPosX + 120, _startPosY);
-				g.DrawLine(pen, _startPosX + 150, _startPosY + 50, _startPosX + 135, _startPosY);
-				g.DrawLine(pen, _startPosX + 150, _startPosY + 50, _startPosX + 165, _startPosY);
-				g.DrawLine(pen, _startPosX + 195, _startPosY + 50, _startPosX + 180, _startPosY);
-				g.DrawLine(pen, _startPosX + 195, _startPosY + 50, _startPosX + 210, _startPosY);
+				g.DrawLine(pen, _startPosX + 30, _startPosY + 50, _startPosX+15, _startPosY);
+				g.DrawLine(pen, _startPosX + 30, _startPosY + 50, _startPosX + 45, _startPosY);
+				g.DrawLine(pen, _startPosX + 75, _startPosY + 50, _startPosX + 60, _startPosY);
+				g.DrawLine(pen, _startPosX + 75, _startPosY + 50, _startPosX + 90, _startPosY);
+				g.DrawLine(pen, _startPosX + 120, _startPosY + 50, _startPosX + 105, _startPosY);
+				g.DrawLine(pen, _startPosX + 120, _startPosY + 50, _startPosX + 135, _startPosY);
+				g.DrawLine(pen, _startPosX + 165, _startPosY + 50, _startPosX + 150, _startPosY);
+				g.DrawLine(pen, _startPosX + 165, _startPosY + 50, _startPosX + 180, _startPosY);
 			}
 			base.DrawTrain(g);
 			if (Flashlight)
 			{
 				g.FillRectangle(additbrush, _startPosX, _startPosY + 50, 20, 20);
 			}
-			
 		}
 	}
 }

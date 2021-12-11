@@ -7,12 +7,14 @@ namespace butusovlab1base
 		protected readonly int trainWidth = 200;
 
 		protected readonly int trainHeight = 190;
+
 		public BaseTrain(int maxSpeed, float weight, Color mainColor)
 		{
 			MaxSpeed = maxSpeed;
 			Weight = weight;
 			MainColor = mainColor;
 		}
+
 		protected BaseTrain(int maxSpeed, float weight, Color mainColor, int trainWidth, int trainHeight)
 		{
 			MaxSpeed = maxSpeed;
@@ -21,6 +23,7 @@ namespace butusovlab1base
 			this.trainWidth = trainWidth;
 			this.trainHeight = trainHeight;
 		}
+
 		public override void MoveTrain(Direction direction)
 		{
 			float step = MaxSpeed * 100 / Weight;
