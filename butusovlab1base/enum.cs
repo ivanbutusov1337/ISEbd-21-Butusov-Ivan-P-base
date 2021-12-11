@@ -1,9 +1,5 @@
 ﻿namespace butusovlab1base
 
-
-
-
-
 {
     enum Direction
     {
