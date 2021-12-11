@@ -29,12 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.pictureBoxtrain = new System.Windows.Forms.PictureBox();
-			this.buttonCreate = new System.Windows.Forms.Button();
 			this.buttonUp = new System.Windows.Forms.Button();
 			this.buttonDown = new System.Windows.Forms.Button();
 			this.buttonRight = new System.Windows.Forms.Button();
 			this.buttonLeft = new System.Windows.Forms.Button();
-			this.buttonCreateBase = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxtrain)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -46,16 +44,6 @@
 			this.pictureBoxtrain.Size = new System.Drawing.Size(884, 461);
 			this.pictureBoxtrain.TabIndex = 0;
 			this.pictureBoxtrain.TabStop = false;
-			// 
-			// buttonCreate
-			// 
-			this.buttonCreate.Location = new System.Drawing.Point(12, 12);
-			this.buttonCreate.Name = "buttonCreate";
-			this.buttonCreate.Size = new System.Drawing.Size(75, 23);
-			this.buttonCreate.TabIndex = 1;
-			this.buttonCreate.Text = "Создать";
-			this.buttonCreate.UseVisualStyleBackColor = true;
-			this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
 			// 
 			// buttonUp
 			// 
@@ -105,27 +93,15 @@
 			this.buttonLeft.UseVisualStyleBackColor = true;
 			this.buttonLeft.Click += new System.EventHandler(this.buttonMove_Click);
 			// 
-			// buttonCreateBase
-			// 
-			this.buttonCreateBase.Location = new System.Drawing.Point(93, 12);
-			this.buttonCreateBase.Name = "buttonCreateBase";
-			this.buttonCreateBase.Size = new System.Drawing.Size(75, 23);
-			this.buttonCreateBase.TabIndex = 6;
-			this.buttonCreateBase.Text = "Создать";
-			this.buttonCreateBase.UseVisualStyleBackColor = true;
-			this.buttonCreateBase.Click += new System.EventHandler(this.buttonCreateBase_Click);
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(884, 461);
-			this.Controls.Add(this.buttonCreateBase);
 			this.Controls.Add(this.buttonLeft);
 			this.Controls.Add(this.buttonRight);
 			this.Controls.Add(this.buttonDown);
 			this.Controls.Add(this.buttonUp);
-			this.Controls.Add(this.buttonCreate);
 			this.Controls.Add(this.pictureBoxtrain);
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -138,12 +114,10 @@
 		#endregion
 
 		private System.Windows.Forms.PictureBox pictureBoxtrain;
-		private System.Windows.Forms.Button buttonCreate;
 		private System.Windows.Forms.Button buttonUp;
 		private System.Windows.Forms.Button buttonDown;
 		private System.Windows.Forms.Button buttonRight;
 		private System.Windows.Forms.Button buttonLeft;
-		private System.Windows.Forms.Button buttonCreateBase;
 	}
 }
 

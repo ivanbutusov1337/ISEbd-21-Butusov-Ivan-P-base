@@ -25,6 +25,7 @@ namespace butusovlab1base
 			_startPosX = x;
 			_startPosY = y;
 		}
+
 		public abstract void DrawTrain(Graphics g);
 
 		public abstract void MoveTrain(Direction direction);
